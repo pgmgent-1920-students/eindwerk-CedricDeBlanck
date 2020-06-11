@@ -2,21 +2,33 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://pgmgent-1920-students.github.io/react-firebase/",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-brands-svg-icons": "^5.13.0",
+    "@fortawesome/free-regular-svg-icons": "^5.13.0",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/react-fontawesome": "^0.1.10",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "bootstrap": "^4.4.1",
+    "classnames": "^2.2.6",
+    "firebase": "^7.14.3",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
-    "sanitize.css": "^11.0.1",
-    "sass": "^1.26.8"
+    "uuid": "^8.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "gh:pages": "rimraf ../docs/ && yarn build && cpy **/*.* --cwd=build ../../docs/ --parents"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -34,6 +46,8 @@
     ]
   },
   "devDependencies": {
-    "style-loader": "^1.2.1"
+    "cpy-cli": "^3.1.1",
+    "node-sass": "^4.14.1",
+    "rimraf": "^3.0.2"
   }
 }

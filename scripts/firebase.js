@@ -1,32 +1,43 @@
 import * as admin from 'firebase-admin';
+import 'firebase/auth';
 import 'firebase/firestore';
 
 import serviceAccount from './key.json';
-console.log(serviceAccount);
 
 const app = admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://eindwerk-cedricdeblanck.firebaseio.com"
+  databaseURL: "https://react-pgmgent.firebaseio.com"
 });
+
+// Reference Authentication
+const auth = app.auth();
 
 // Reference Firestore
 const db = app.firestore();
-console.log(db);
-/*
 
-  Generate Timestamps
+/*
+ * Generate Timestamps
 */
 const generateTimestamps = () => {
   return {
-    createdAt: DataCue.now(),
+    createdAt: Date.now(),
     modifiedAt: null,
     deletedAt: null,
   }
 };
 
+/*
+* Generate Integer between min and max
+*/
+const generateValueBetweenMinAndMax = (min, max) => {
+  return min + Math.round(Math.random()*(max - min));
+}
+
 export {
   admin,
   app,
+  auth,
   db,
-  generateTimestamps
+  generateTimestamps,
+  generateValueBetweenMinAndMax
 }

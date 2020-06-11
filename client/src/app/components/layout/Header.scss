@@ -1,0 +1,71 @@
+@import '../../_sass/app.scss';
+
+header {
+    height: 180px;
+    .header__top__contact {
+        background-color: $color-cyan;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        color: $color-white;
+        position: relative;
+        justify-content: space-evenly;
+        .nav__item {
+            padding: 10px;
+        }
+        .social {
+            display: flex;
+            flex-direction: row;
+            font-size: 30px;
+            padding: 5px;
+            width: 150px;
+            justify-content: space-evenly;
+            i {
+                margin-left: $spacer;
+            }
+        }
+    }
+    
+    .navigation {
+        height: 100px;
+        border: 1px solid var($color-gray);
+        background: rgb(255,255,255);
+        font-family: 'Avenir Next';
+        font-weight: 500;
+        color: var($color-cyan);
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        .logo {
+            width: 98px;
+            margin-left: var($gutter);
+        }
+        .navigation__list {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            height: fit-content;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            justify-content: space-between;
+            width: 40%;
+            margin-left: calc(var($gutter)*8);
+            .nav__item {
+                justify-content: space-between;
+                a {
+                    text-decoration: none;
+                    color: var($color-cyan);
+                }
+            }
+        }
+    }
+    
+    .header__top__bottom {
+        background-color: var($color-cyan);
+        height: 40px;
+    }
+}
