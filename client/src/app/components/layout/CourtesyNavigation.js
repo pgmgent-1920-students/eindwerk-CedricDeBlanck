@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import * as Routes from '../../routes';
 
 import { useAuth } from '../../services/firebase/auth.services';
+import Logo from '../../_static/assets/images/logo192.png';
 
 import './CourtesyNavigation.scss';
 
@@ -16,15 +17,13 @@ const CourtesyNavigation = ({children}) => {
         {!!currentUser
         ? <div className="btn-group">
             <button type="button" className="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img className="profile__picture" src={currentUser.photoURL} />
+              <img className="profile__picture" src={Logo} />
             </button>
             <div className="dropdown-menu dropdown-menu-right">
-              <Link to={Routes.HOME} className="dropdown-item">Home</Link>
-              <div className="dropdown-divider"></div>
-              <a className="dropdown-item" href="#" onClick={signOut}>Logout</a>
+              <a className="dropdown-item" href={Routes.HOME} onClick={signOut}>Logout</a>
             </div>
           </div>
-        : <Link className="nav-link" to={Routes.AUTH_SIGN_IN}>Sign In</Link>
+        : <Link className="nav-link" to={Routes.AUTH_SIGN_IN}>Log in</Link>
         }        
       </li>
     </ul>

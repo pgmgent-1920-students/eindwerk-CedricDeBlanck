@@ -4,27 +4,27 @@ import { Link  } from 'react-router-dom';
 import * as Routes from '../../routes';
 
 import './Footer.scss';
-
+ 
 const Footer = (props) => {
   return (
     <footer className="app-footer">
             <h2 className="footer__title">{props.title} </h2>
       <div className="container">
         <div className="row">
-          <div className="col-12 col-md-4 col-lg-3">
+          <div className="col-12 col-md-4 col-lg-4">
               <div className="info__adress">
-              {props.adress}
-
+                <p className="info__subtitle">Contact:</p>
+                <p>{props.adress.street} {props.adress.number},</p>
+                <p>{props.adress.city}</p>
+                
               </div>
-              <div className="info__email">
-
-
-              </div>
-              <div className="info__number">
-
-
-              </div>
-            <ul className="nav flex-column">
+            
+          </div>
+          <div className="col-12 col-md-4 col-lg-4">
+  
+          </div>
+          <div className="col-12 col-md-4 col-lg-4">
+          <ul className="nav flex-column">
               <li className="nav-item">
                 <Link to={Routes.HOME} className="nav-link">Home</Link>
               </li>
@@ -39,8 +39,7 @@ const Footer = (props) => {
               </li>
             </ul>
           </div>
-          <div className="col-12 col-md-4 col-lg-3">3</div>
-          <div className="col-12 col-md-4 col-lg-6">6</div>
+          
         </div>
       </div>
 

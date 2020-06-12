@@ -1,6 +1,24 @@
 @import '../../_sass/vendor/bootstrap';
+@import '../../_sass/abstracts/variables';
 
 .app-footer {
-  background: $gray-900;
-  color: $gray-100;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 44%, rgba(150,150,150,1) 94%);
+  border: 1px solid gray;
+  .footer__title {
+    text-align: center;
+    padding: 15px;
+    color: $color-cyan;
+  }
+  .info__subtitle {
+    
+  }
+  .info__adress {
+      text-align: left;
+  }
+  
+}
+
+.nav.flex-column {
+    justify-content: flex-end;
 }

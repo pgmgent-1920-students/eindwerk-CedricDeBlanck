@@ -29,15 +29,15 @@ const SignInPage = ({children}) => {
           <div className="col-12 offset-md-2 col-md-8 offset-lg-3 col-lg-6">
             <form onSubmit={(ev) => handleSubmit(ev)}>
               <div className="form-group">
-                <label htmlFor="txtEmail">Email address</label>
+                <label htmlFor="txtEmail">Email addres</label>
                 <input type="email" className="form-control" id="txtEmail" name="txtEmail"  aria-describedby="emailHelp" onChange={handleInputChange} value={signInForm.txtEmail} />
-                <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
+                <small id="emailHelp" className="form-text text-muted">We delen je e-mail adres niet met anderen!</small>
               </div>
               <div className="form-group">
-                <label htmlFor="txtPassword">Password</label>
+                <label htmlFor="txtPassword">Passwoord</label>
                 <input type="password" className="form-control" id="txtPassword" name="txtPassword" onChange={handleInputChange} value={signInForm.txtPassword} />
               </div>
-              <button type="submit" className="btn btn-primary">Sign In</button>
+              <button type="submit" className="btn btn-primary">Log In</button>
             </form>
           </div>
         </div>

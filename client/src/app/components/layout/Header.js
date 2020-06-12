@@ -18,11 +18,7 @@ const Header = (props) => {
     <header>
       <div className="header__top__contact">
         <p className="nav__item">{props.name}</p>
-        <div className="social">
-          <FontAwesomeIcon icon={faFacebookSquare} />
-          <FontAwesomeIcon icon={faInstagramSquare} />
-          <FontAwesomeIcon icon={faTwitter} />
-        </div>
+        
       </div>
         <div className="navigation">
           <div className="nav__logo">
@@ -38,11 +34,17 @@ const Header = (props) => {
             <li className="nav__item">
               <NavLink to={Routes.POKEMONS} className="nav-link" activeClassName="active">Contact</NavLink>
             </li>
+            <div className="social">
+            <a href="https://www.facebook.com/GraduaatProgrammeren.Arteveldehogeschool"><FontAwesomeIcon icon={faFacebookSquare} /></a>
+            <a href="https://www.instagram.com/explore/locations/354987211999862/graduaat-programmeren-arteveldehogeschool/"><FontAwesomeIcon icon={faInstagramSquare} /></a>
+            <a href="https://twitter.com/explore"><FontAwesomeIcon icon={faTwitter} /></a>
+          </div>
           </ul>
-          <CourtesyNavigation />
+          <div className="login">
+            <CourtesyNavigation />
+          </div>
         </div>
       <div className="header__top__contact">
-        
       </div>
     </header>
   )
