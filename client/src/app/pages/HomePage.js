@@ -5,21 +5,20 @@ import './HomePage.scss';
 const HomePage = ({children}) => {
   return (
     <div className="page page--home">
-      <section className="pt-4 pt-md-11 featured">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-12 col-md-5 col-lg-6 order-md-2">
-              Iets anders              
-            </div>
-            <div className="col-12 col-md-7 col-lg-6 order-md-1 aos-init aos-animate">
-              <h1 className="display-3 text-center text-md-left">
-                Welcome to <span className="font-weight-bold">Firebase React Boilerplate</span>. <br />
-                Firebase everything.
-              </h1>              
-            </div>
+      <div className="container">
+        <div className="m-vegetables__images">
+          <img src="https://ec.europa.eu/jrc/sites/jrcsh/files/styles/normal-responsive/public/samael334_adobestock_167843675.jpeg?itok=kSQjfav6" alt=""></img>
+          <div className="m-vegetables__title">
+            <h1>Groenten</h1>
           </div>
         </div>
-      </section>
+        <div className="m-vegetables__images">
+          <img src="https://www.retaildetail.be/sites/default/files/styles/news/public/news/shutterstock_1465341938_0.jpg" alt=""></img>
+          <div className="m-vegetables__title">
+            <h1>Fruit</h1>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

@@ -33,7 +33,6 @@ header {
         display: flex;
         flex-direction: row;
         position: relative;
-        margin-right: 40px;
         .logo {
             width: 98px;
             margin-left: var($gutter);
@@ -60,6 +59,8 @@ header {
                 a {
                     text-decoration: none;
                     color: var($color-cyan);
+                    margin-top: $spacer*0.7;
+
                 }
             }
         }
@@ -68,5 +69,10 @@ header {
     .header__top__bottom {
         background-color: var($color-cyan);
         height: 40px;
+    }
+
+    .login {
+        margin-left: $gutter*25;
+        margin-top: $spacer*3;
     }
 }

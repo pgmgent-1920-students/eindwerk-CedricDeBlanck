@@ -26,10 +26,10 @@ const Header = (props) => {
           </div>
           <ul className="navigation__list">
             <li className="nav__item">
-            <NavLink to={Routes.MESSAGES} className="nav-link" activeClassName="active">Groenten</NavLink>
+            <NavLink to={Routes.VEGETABLES} className="nav-link" activeClassName="active">Groenten</NavLink>
             </li>
             <li className="nav__item">
-            <NavLink to={Routes.BOOKMARKS} className="nav-link" activeClassName="active">Fruit</NavLink>
+            <NavLink to={Routes.FRUIT} className="nav-link" activeClassName="active">Fruit</NavLink>
             </li>
             <li className="nav__item">
               <NavLink to={Routes.POKEMONS} className="nav-link" activeClassName="active">Contact</NavLink>

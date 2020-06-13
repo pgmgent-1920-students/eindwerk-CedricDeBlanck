@@ -5,13 +5,11 @@
   background: rgb(255,255,255);
   background: linear-gradient(180deg, rgba(255,255,255,1) 44%, rgba(150,150,150,1) 94%);
   border: 1px solid gray;
+  height: 300px;
   .footer__title {
     text-align: center;
     padding: 15px;
     color: $color-cyan;
-  }
-  .info__subtitle {
-    
   }
   .info__adress {
       text-align: left;

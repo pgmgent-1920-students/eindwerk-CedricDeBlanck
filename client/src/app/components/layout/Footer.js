@@ -29,13 +29,13 @@ const Footer = (props) => {
                 <Link to={Routes.HOME} className="nav-link">Home</Link>
               </li>
               <li className="nav-item">
-                <Link to={Routes.MESSAGES} className="nav-link">Messages</Link>
+                <Link to={Routes.VEGETABLES} className="nav-link">Groenten</Link>
               </li>
               <li className="nav-item">
-                <Link to={Routes.BOOKMARKS} className="nav-link">Bookmarks</Link>
+                <Link to={Routes.FRUIT} className="nav-link">Fruit</Link>
               </li>
               <li className="nav-item">
-                <Link to={Routes.AUTH_SIGN_IN} className="nav-link">Sign-In</Link>
+                <Link to={Routes.AUTH_SIGN_IN} className="nav-link">Log in</Link>
               </li>
             </ul>
           </div>
