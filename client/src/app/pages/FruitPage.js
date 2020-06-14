@@ -16,7 +16,7 @@ const BookmarksPage = ({}) => {
   const fetchData = async () => {
     const response = await fetch(API_URL);
     const jsonData = await response.json();
-    setTxtUser(jsonData);
+    console.log(jsonData)
   }
 
   return (
