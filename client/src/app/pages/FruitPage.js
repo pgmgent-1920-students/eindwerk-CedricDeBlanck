@@ -1,13 +1,9 @@
-import React, { Fragment, useState, useEffect, useRef } from 'react';
-
-import { BookmarksList } from '../components/bookmark';
+import React, { Fragment, useState, useEffect } from 'react';
 
 const API_URL = 'https://github.com/CedricDeBlanck/Eindwerk-pgm-BAAS-CedricDeBlanck/blob/master/data/fruitData.json';
 
 const BookmarksPage = ({}) => {
-  const refElement = useRef();
-  const [user, setUser] = useState();
-  const [txtUser, setTxtUser] = useState('');
+  const [user] = useState();
 
   useEffect(() => {
     fetchData()
@@ -16,6 +12,7 @@ const BookmarksPage = ({}) => {
   const fetchData = async () => {
     const response = await fetch(API_URL);
     const jsonData = await response.json();
+    console.log(jsonData)
   }
 
   return (
