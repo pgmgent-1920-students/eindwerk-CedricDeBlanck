@@ -29,7 +29,7 @@ const SignInPage = ({children}) => {
           <div className="col-12 offset-md-2 col-md-8 offset-lg-3 col-lg-6">
             <form onSubmit={(ev) => handleSubmit(ev)}>
               <div className="form-group">
-                <label htmlFor="txtEmail">Email addres</label>
+                <label htmlFor="txtEmail">E-mail adres</label>
                 <input type="email" className="form-control" id="txtEmail" name="txtEmail"  aria-describedby="emailHelp" onChange={handleInputChange} value={signInForm.txtEmail} />
                 <small id="emailHelp" className="form-text text-muted">We delen je e-mail adres niet met anderen!</small>
               </div>

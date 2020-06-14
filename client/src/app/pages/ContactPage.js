@@ -3,7 +3,8 @@ import React, { } from 'react';
 import './PokemonsPage.scss';
 import { PokemonsList } from '../components/pokemons';
 
-const PokemonsPage = ({children}) => {
+
+const ContactPage = ({children}) => {
   return (
     <div className="page page--pokemons">
       <div className="container">
@@ -18,4 +19,4 @@ const PokemonsPage = ({children}) => {
   );
 };
 
-export default PokemonsPage;
+export default ContactPage;

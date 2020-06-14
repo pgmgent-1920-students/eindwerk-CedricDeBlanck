@@ -1,15 +1,15 @@
-import BookmarksPage from './BookmarksPage';
+import FruitPage from './FruitPage';
 import BookmarkDetailPage from './BookmarkDetailPage';
 import HomePage from './HomePage';
 import VegetablePage from './VegetablePage';
-import PokemonsPage from './PokemonsPage';
+import ContactPage from './ContactPage';
 import SignInPage from './SignInPage';
 
 export {
-  BookmarksPage,
+  FruitPage,
   BookmarkDetailPage,
   HomePage,
   VegetablePage,
-  PokemonsPage,
+  ContactPage,
   SignInPage,
 }

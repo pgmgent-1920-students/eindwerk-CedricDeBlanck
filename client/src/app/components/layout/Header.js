@@ -32,7 +32,7 @@ const Header = (props) => {
             <NavLink to={Routes.FRUIT} className="nav-link" activeClassName="active">Fruit</NavLink>
             </li>
             <li className="nav__item">
-              <NavLink to={Routes.POKEMONS} className="nav-link" activeClassName="active">Contact</NavLink>
+              <NavLink to={Routes.CONTACT} className="nav-link" activeClassName="active">Contact</NavLink>
             </li>
             <div className="social">
             <a href="https://www.facebook.com/GraduaatProgrammeren.Arteveldehogeschool"><FontAwesomeIcon icon={faFacebookSquare} /></a>
