@@ -2,7 +2,7 @@ import React, { Fragment, useState, useEffect, useRef } from 'react';
 
 import { BookmarksList } from '../components/bookmark';
 
-const API_URL = 'https://github.com/CedricDeBlanck/Eindwerk-pgm-BAAS-CedricDeBlanck/blob/master/data/fruit.json';
+const API_URL = 'https://github.com/CedricDeBlanck/Eindwerk-pgm-BAAS-CedricDeBlanck/blob/master/data/fruitData.json';
 
 const BookmarksPage = ({}) => {
   const refElement = useRef();
