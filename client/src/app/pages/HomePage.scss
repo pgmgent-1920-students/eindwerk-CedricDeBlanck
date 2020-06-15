@@ -2,23 +2,7 @@
 @import '../_sass/vendor/index';
 
 .page--home {
-    .m-vegetables__images {
-        width: 80%;
-        position: relative;
-        height: 400px;
-        background-color: $color-white;
-        box-shadow: 10px 10px 46px 0px rgba(0,0,0,0.75);
-        margin: 50px auto 50px auto;
-        display: flex;
-        .m-vegetables__title {
-            h1 {
-                margin: 20px;
-                color: $color-cyan;
-            }
-        }
-        img {
-            width: 60%;
-            margin: 20px;
-        }
+    .card {
+        margin: 50px 0px
     }
 }

@@ -4,7 +4,7 @@ import { useParams } from 'react-router';
 import { BookmarkDetail } from '../components/bookmark';
 import { useFirestore } from '../services';
 
-const BookmarkDetailPage = ({}) => {
+const BookmarkDetailPage = ({children}) => {
   const { id } = useParams();
   const [bookmark, setBookmark] = useState(null);
   const {getBookmark} = useFirestore();

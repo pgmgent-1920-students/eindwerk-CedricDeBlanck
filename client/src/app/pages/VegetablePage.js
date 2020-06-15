@@ -1,22 +1,21 @@
 import React, { } from 'react';
 
-import { MessagesList } from '../components/message';
+import VegetablesList from '../components/vegetables/Vegetables';
 
-const MessagesPage = ({children}) => {
+const VegetablesPage = ({children}) => {
   return (
     <div className="page page--messages">
       <section className="pt-4 pt-md-11">
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <h1>Messages</h1>
+              <VegetablesList />
             </div>
           </div>
-          <MessagesList />
         </div>
       </section>
     </div>
   );
 };
 
-export default MessagesPage;
+export default VegetablesPage;

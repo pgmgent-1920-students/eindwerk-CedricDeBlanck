@@ -5,6 +5,7 @@
   "license": "MIT",
   "homepage": "",
   "dependencies": {
+    "babel-node": "0.0.1-security",
     "faker": "^4.1.0",
     "firebase": "^7.14.3",
     "firebase-admin": "^8.12.1",
@@ -20,8 +21,8 @@
   "scripts": {
     "test:firebase": "babel-node firebase.js --debug --presets airbnb",
     "seeder:bookmarks": "babel-node bookmarks_seeder.js --debug --presets airbnb",
-    "seeder:messages": "babel-node messages_seeder.js --debug --presets airbnb",
-    "seeder:pokemons": "babel-node pokemons_seeder.js --debug --presets airbnb",
+    "seeder:groenten": "babel-node groenten_seeder.js --debug --presets airbnb",
+    "seeder:fruit": "babel-node fruit_seeder.js --debug --presets airbnb",
     "seeder:users": "babel-node users_seeder.js --debug --presets airbnb",
     "delete:bookmarks": "babel-node collection_delete.js bookmarks 50 --debug --presets airbnb",
     "delete:messages": "babel-node collection_delete.js messages 50 --debug --presets airbnb",

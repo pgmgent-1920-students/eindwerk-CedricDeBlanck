@@ -4,27 +4,26 @@ import { admin, app, db, generateTimestamps } from './firebase';
 
 (async () => {
   // Create an empty array for messages
-  const messages = [];
+  const groenten = [];
 
   // Get messages collection
-  let collectionRef = db.collection('messages');
+  let collectionRef = db.collection('Groenten');
   // Loop through the documents of the collection
   const result = await collectionRef.get().then(querySnapshot => {
     const size = querySnapshot.size;
     querySnapshot.forEach(documentSnapshot => {
       const id = documentSnapshot.id;
-      messages.push({
+      groenten.push({
         id,
         ...documentSnapshot.data()
       });
     });
   });
-  console.log(messages);
-
+  console.log(groenten)
   // 1. Add a document
-  /*collectionRef.add({foo: 'bar'}).then(documentReference => {
-    console.log(`Added document with name: ${documentReference.id}`);
-  });*/
+  collectionRef.add({createdAt: new Date().getTime(), id: 2, name: 'Tomaat'}).then(documentReference => {
+    console.log(`Added product with name: ${documentReference.id}`);
+  });
 
   // 2. Add a document
   /*let documentRef = collectionRef.doc();
@@ -41,7 +40,7 @@ import { admin, app, db, generateTimestamps } from './firebase';
     console.log(`Failed to create document: ${err}`);
   });*/
 
-  // Create a Message
+  /*// Create a Message
   const createMessage = (content, sender) => {
     // Add a document with faker
     const data = {
@@ -64,6 +63,6 @@ import { admin, app, db, generateTimestamps } from './firebase';
     return await Promise.all(promises);
   };
 
-  await createMessages(24); 
+  await createMessages(24); */
 
 })();
