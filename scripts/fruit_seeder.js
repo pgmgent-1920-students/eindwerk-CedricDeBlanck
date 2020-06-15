@@ -24,7 +24,9 @@ let collectionRef = db.collection("Fruit");
 
     for(let i=0; i < n; i++) {
       fruits.push(createFruit({
-        
+        name: 'Apple',
+        id: 1,
+        img: ""
       }));
     }
   }
