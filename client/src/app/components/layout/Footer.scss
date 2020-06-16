@@ -5,17 +5,26 @@
   background: rgb(255,255,255);
   border: 1px solid gray;
   height: 300px;
+  text-align: center;
   .footer__title {
     text-align: center;
     padding: 15px;
     color: $color-cyan;
   }
   .info__adress {
-      text-align: left;
+      text-align: center;
+      margin-top: $spacer;
+      p {
+        margin-bottom: 0px!important;
+    }
+    .info__adress__inner {
+        margin-top: 10px;
+    }
   }
   .footer__social {
       font-size: 30px;
       margin: 0 auto;
+     
       a {
           margin: 10px;
       }

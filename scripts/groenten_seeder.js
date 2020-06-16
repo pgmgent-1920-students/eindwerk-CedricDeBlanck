@@ -4,7 +4,7 @@ import { admin, app, db, generateTimestamps } from './firebase';
 
 (async () => {
   // Create an empty array for messages
-  const groenten = [];
+  const Groenten = [];
 
   // Get messages collection
   let collectionRef = db.collection('Groenten');
@@ -13,22 +13,18 @@ import { admin, app, db, generateTimestamps } from './firebase';
     const size = querySnapshot.size;
     querySnapshot.forEach(documentSnapshot => {
       const id = documentSnapshot.id;
-      groenten.push({
+      Groenten.push({
         id,
         ...documentSnapshot.data()
       });
     });
   });
-  console.log(groenten)
+  console.log(Groenten);
+
   // 1. Add a document
-  collectionRef.add(
-    {createdAt: new Date().getTime(),
-     id: 9,
-     name: 'Gele paprika',
-     img_url: 'https://raw.githubusercontent.com/CedricDeBlanck/Eindwerk-pgm-BAAS-CedricDeBlanck/master/assets/images/groenten/gele-paprika.jpg?token=ANGVHBQBPMZM6K7RFS7WRIK65ACOA'}
-    ).then(documentReference => {
-    console.log(`Added product with name: ${documentReference.id}`);
-  });
+  /*collectionRef.add({foo: 'bar'}).then(documentReference => {
+    console.log(`Added document with name: ${documentReference.id}`);
+  });*/
 
   // 2. Add a document
   /*let documentRef = collectionRef.doc();
@@ -45,29 +41,27 @@ import { admin, app, db, generateTimestamps } from './firebase';
     console.log(`Failed to create document: ${err}`);
   });*/
 
-  /*// Create a Message
-  const createMessage = (content, sender) => {
-    // Add a document with faker
-    const data = {
-      content: content,
-      sender: sender,
-      ...generateTimestamps()
-    };
-
-    collectionRef.add(data).then(documentReference => {
-      console.log(`Added document with name: ${documentReference.id}`);
-    });
+  // Create a Message
+ // document with data webshop bouncemerch
+ const data = {
+  name: 'Courgette',
+  content:' tis keer twuk el',
+  price:'€1,00',
+  image: 'https://img-3.journaldesfemmes.fr/PVIbH_pGxMFhGPl8oEkWr3DbtaY=/910x607/smart/3d4af6fac7234c2283fd7d9cf34e6981/ccmcms-jdf/10659281.jpg',
   };
+  collectionRef.add({data}).then(documentReference => {
+  console.log(`Added document with name: ${documentReference.id}`);
+  });
 
-  // Create messages via promises
-  const createMessages = async (n = 20) => {
-    const promises = [];
-    for (let i=0; i < n;i++) {
-      promises.push(createMessage(faker.lorem.paragraph(), faker.name.findName()));
-    }
-    return await Promise.all(promises);
-  };
+  // // Create messages via promises
+  // const createMessages = async (n = 20) => {
+  //   const promises = [];
+  //   for (let i=0; i < n;i++) {
+  //     promises.push(createMessage(faker.lorem.paragraph(), faker.name.findName()));
+  //   }
+  //   return await Promise.all(promises);
+  // };
 
-  await createMessages(24); */
+  //await createMessages(24); 
 
 })();

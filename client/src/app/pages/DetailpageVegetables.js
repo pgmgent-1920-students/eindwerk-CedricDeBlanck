@@ -1,21 +1,21 @@
 import React, { useEffect, useState  } from 'react';
 import { useParams } from 'react-router';
 
-import { BookmarkDetail } from '../components/bookmark';
+import { VegetableDetailInner } from '../components/vegetables';
 import { useFirestore } from '../services';
 
-const BookmarkDetailPage = ({children}) => {
+const BookmarkDetailPage = ({}) => {
   const { id } = useParams();
-  const [bookmark, setBookmark] = useState(null);
-  const {getBookmark} = useFirestore();
+  const [vegetable, setVegetable] = useState(null);
+  const {getDetailFromVegetables} = useFirestore();
 
   useEffect(() => {
     const fetchData = async (q) => {
-      const data = await getBookmark(id);
-      setBookmark(data);
+      const data = await getDetailFromVegetables(id);
+      setVegetable(data);
     }; 
 
-    if (!bookmark) {
+    if (!vegetable) {
       fetchData();
     }
   }, []);
@@ -28,7 +28,7 @@ const BookmarkDetailPage = ({children}) => {
               <h1>Bookmark</h1>
             </div>
           </div>
-          <BookmarkDetail bookmark={bookmark} />
+          <VegetableDetailInner vegetable={vegetable} />
       </div>
     </div>
   );

@@ -3,10 +3,13 @@ import { Link  } from 'react-router-dom';
 
 import * as Routes from '../../routes';
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
-import { faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { faInstagramSquare } from "@fortawesome/free-brands-svg-icons";
+
+import { FaPhone } from "react-icons/fa";  // Font Awesome
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
+
 
 import './Footer.scss';
  
@@ -18,15 +21,22 @@ const Footer = (props) => {
         <div className="row">
           <div className="col-12 col-md-4 col-lg-4">
               <div className="info__adress">
-                <p className="info__subtitle">Contact:</p>
-                <p>{props.adress.street} {props.adress.number},</p>
+              <FaMapMarkerAlt />
+                <h5 className="info__subtitle">Contact:</h5>
+                <p>Adres:</p>
+                <p className="info__adress__inner">{props.adress.street} {props.adress.number},</p>
                 <p>{props.adress.city}</p>
                 
               </div>
-            
+
           </div>
           <div className="col-12 col-md-4 col-lg-4">
-  
+            <div className="info__adress">
+            <FaPhone />
+                  <h5 className="info__subtitle">Telefoon:</h5>
+                  <p>GSM: {props.tel.GSM}</p>
+                  <p className="info__adress__inner">TEL: {props.tel.TEL}</p>
+            </div>
           </div>
           <div className="col-12 col-md-4 col-lg-4">
           <ul className="nav flex-column">
@@ -45,9 +55,9 @@ const Footer = (props) => {
             </ul>
           </div>
           <div className="footer__social">
-            <a href="https://www.facebook.com/GraduaatProgrammeren.Arteveldehogeschool"><FontAwesomeIcon icon={faFacebookSquare} /></a>
-            <a href="https://www.instagram.com/explore/locations/354987211999862/graduaat-programmeren-arteveldehogeschool/"><FontAwesomeIcon icon={faInstagramSquare} /></a>
-            <a href="https://twitter.com/explore"><FontAwesomeIcon icon={faTwitter} /></a>
+            <a href="https://www.facebook.com/GraduaatProgrammeren.Arteveldehogeschool"><FaFacebookSquare /></a>
+            <a href="https://www.instagram.com/explore/locations/354987211999862/graduaat-programmeren-arteveldehogeschool/"><FaInstagramSquare /></a>
+            <a href="https://twitter.com/explore"><FaTwitter /></a>
             <div className="footer__gradient"></div>
           </div>
         </div>

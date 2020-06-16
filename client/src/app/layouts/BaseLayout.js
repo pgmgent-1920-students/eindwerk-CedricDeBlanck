@@ -8,7 +8,7 @@ const BaseLayout = ({children}) => (
     <main className="app-main">
       {children}      
     </main>
-    <Footer title="Groenten & Fruit webshop" adress={{street: "Boerenstraat", number: 49, city: "Lokeren"}}  />
+    <Footer title="Groenten & Fruit webshop" adress={{street: "Boerenstraat", number: 49, city: "Lokeren"}} tel={{GSM: "+32 40 18 23", TEL: "056 82 23 81" }}  />
   </Fragment>
 );
 export default BaseLayout;

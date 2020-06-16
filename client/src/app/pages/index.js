@@ -1,5 +1,5 @@
 import FruitPage from './FruitPage';
-import BookmarkDetailPage from './BookmarkDetailPage';
+import DetailpageVegetables from './DetailpageVegetables';
 import HomePage from './HomePage';
 import VegetablePage from './VegetablePage';
 import ContactPage from './ContactPage';
@@ -7,7 +7,7 @@ import SignInPage from './SignInPage';
 
 export {
   FruitPage,
-  BookmarkDetailPage,
+  DetailpageVegetables,
   HomePage,
   VegetablePage,
   ContactPage,

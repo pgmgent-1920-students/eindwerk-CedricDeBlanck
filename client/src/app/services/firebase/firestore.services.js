@@ -32,14 +32,36 @@ const FirestoreProvider = ({children}) => {
       return {
         uid: doc.id,
         ...doc.data()
+    
       }
-    });
-    console.log(vegetables)
+
+    }); 
+
     return vegetables;
   };
 
+  const getDetailFromVegetables = async (id) => {
+    const docRef = await db.collection('Groenten').doc(id);
+    const docSnapshot = await docRef.get();
+    return {
+      uid: docSnapshot.id,
+      ...docSnapshot.data()
+    };
+  };
+
+  /*const getDetailFromVegetables = async (id) => {
+    const docRef = db.collection('Groenten').doc();
+    const docSnapshot = await docRef.get(id);
+    const d = docSnapshot.data();
+    console.log(d);
+    return {
+      uid: docSnapshot.id,
+      ...d.data
+    };
+  };*/
+
   return (
-    <FirestoreContext.Provider value={{GetFruit, getVegetables}}>
+    <FirestoreContext.Provider value={{GetFruit, getVegetables, getDetailFromVegetables}}>
       {children}
     </FirestoreContext.Provider>
   );

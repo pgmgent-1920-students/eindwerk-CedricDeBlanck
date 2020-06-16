@@ -6,11 +6,11 @@ import serviceAccount from './key.json';
 
 const app = admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://react-pgmgent.firebaseio.com"
+  databaseURL: "https://eindwerk-cedricdeblanck.firebaseio.com"
 });
 
 // Reference Authentication
-const auth = app.auth();
+
 
 // Reference Firestore
 const db = app.firestore();
@@ -29,15 +29,12 @@ const generateTimestamps = () => {
 /*
 * Generate Integer between min and max
 */
-const generateValueBetweenMinAndMax = (min, max) => {
-  return min + Math.round(Math.random()*(max - min));
-}
+
 
 export {
   admin,
   app,
-  auth,
   db,
   generateTimestamps,
-  generateValueBetweenMinAndMax
+  
 }

@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useFirestore } from '../../services';
 
+import { Link } from 'react-router-dom';
+ 
+import * as Routes from '../../routes';
+
 import './Vegetables.scss';
 
 const VegetablesList = () => {
@@ -11,6 +15,7 @@ const VegetablesList = () => {
     const fetchData = async () => {
       const data = await getVegetables();
       setVegetables(data);
+      console.log(data)
     }
 
     fetchData();    
@@ -19,16 +24,16 @@ const VegetablesList = () => {
   return (
     <div className="row vegetables-list">
     {!!vegetables 
-      ? vegetables.map((vegetable) => {
+      ? vegetables.map((vegetables) => {
         return (
-          <div className="row">
-            <div className="col-12" key={vegetable.id}>
-              <article className="vegetable" data-id={vegetable.id}>
-              <div className="card">
-                <img src={vegetable.img_url} className="card-img-top" alt="..." />
+          <div className="row" key={vegetables.uid}>
+            <div className="col-12" key={vegetables.uid}>
+              <article className="vegetable" key={vegetables.uid} data-id={vegetables.uid}>
+              <div className="card" key={vegetables.uid}>
+                <img src={vegetables.data.image} className="card-img-top" alt={vegetables.data.name} />
                 <div className="card-body">
-                  <p className="card-text">{vegetable.name}</p>
-                  <button type="button" class="btn btn-info">Meer info</button>
+                  <p className="card-text">{vegetables.data.content}</p>
+                  <Link to={Routes.VEGETABLES_DETAIL.replace(':id', vegetables.uid)} className="btn btn-info btn-detail">Meer info</Link>
                 </div>
                 
               </div>          
