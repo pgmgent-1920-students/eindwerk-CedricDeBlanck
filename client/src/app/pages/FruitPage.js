@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { } from 'react';
 
-//const DOMAIN_URL = "https://github.com/CedricDeBlanck/Eindwerk-pgm-BAAS-CedricDeBlanck/";
 
-const BookmarksPage = () => {
+
+const FruitPage = ({children}) => {
   return (
-    <div className="app">
-      <div className="fruit__info"></div>
-    </div>
-  )
-}
+    <div className="page page--pokemons">
+      <div className="container">
+        <div className="row">
 
-export default BookmarksPage;
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default FruitPage;

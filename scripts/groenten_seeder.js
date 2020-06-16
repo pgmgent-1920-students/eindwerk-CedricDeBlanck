@@ -21,7 +21,12 @@ import { admin, app, db, generateTimestamps } from './firebase';
   });
   console.log(groenten)
   // 1. Add a document
-  collectionRef.add({createdAt: new Date().getTime(), id: 2, name: 'Tomaat'}).then(documentReference => {
+  collectionRef.add(
+    {createdAt: new Date().getTime(),
+     id: 9,
+     name: 'Gele paprika',
+     img_url: 'https://raw.githubusercontent.com/CedricDeBlanck/Eindwerk-pgm-BAAS-CedricDeBlanck/master/assets/images/groenten/gele-paprika.jpg?token=ANGVHBQBPMZM6K7RFS7WRIK65ACOA'}
+    ).then(documentReference => {
     console.log(`Added product with name: ${documentReference.id}`);
   });
 

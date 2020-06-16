@@ -3,6 +3,11 @@ import { Link  } from 'react-router-dom';
 
 import * as Routes from '../../routes';
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faInstagramSquare } from "@fortawesome/free-brands-svg-icons";
+
 import './Footer.scss';
  
 const Footer = (props) => {
@@ -39,7 +44,12 @@ const Footer = (props) => {
               </li>
             </ul>
           </div>
-          
+          <div className="footer__social">
+            <a href="https://www.facebook.com/GraduaatProgrammeren.Arteveldehogeschool"><FontAwesomeIcon icon={faFacebookSquare} /></a>
+            <a href="https://www.instagram.com/explore/locations/354987211999862/graduaat-programmeren-arteveldehogeschool/"><FontAwesomeIcon icon={faInstagramSquare} /></a>
+            <a href="https://twitter.com/explore"><FontAwesomeIcon icon={faTwitter} /></a>
+            <div className="footer__gradient"></div>
+          </div>
         </div>
       </div>
 

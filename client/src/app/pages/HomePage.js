@@ -37,7 +37,6 @@ const HomePage = ({children}) => {
           <a href={Routes.FRUIT} class="btn btn-primary">Lijst van fruit</a>
         </div>
         <div class="card-footer text-muted">
-          2 days ago
         </div>
       </div>
     </div>

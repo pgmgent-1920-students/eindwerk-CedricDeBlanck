@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useFirestore } from '../../services';
 
-import './MessagesList.scss';
+import './Vegetables.scss';
 
 const VegetablesList = () => {
   const [vegetables, setVegetables] = useState();
@@ -21,19 +21,23 @@ const VegetablesList = () => {
     {!!vegetables 
       ? vegetables.map((vegetable) => {
         return (
-          <div className="col-12" key={vegetable.id}>
-            <article className="vegetable" data-id={vegetable.id}>
-              <span className="col-3 message__sender">
-                {vegetable.name}
-              </span>
-              <div className="col-9 message__body">
-                {vegetable.createdAt}
-              </div>            
-            </article>
+          <div className="row">
+            <div className="col-12" key={vegetable.id}>
+              <article className="vegetable" data-id={vegetable.id}>
+              <div className="card">
+                <img src={vegetable.img_url} className="card-img-top" alt="..." />
+                <div className="card-body">
+                  <p className="card-text">{vegetable.name}</p>
+                  <button type="button" class="btn btn-info">Meer info</button>
+                </div>
+                
+              </div>          
+              </article>  
+            </div>
           </div>
         )
       })
-      : <p>No messages</p>
+      : <p>Groenten aan het laden...</p>
     }
     </div>
   );

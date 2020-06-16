@@ -1,0 +1,11 @@
+@import '../../_sass/abstracts/index';
+@import '../../_sass/vendor/index';
+
+
+.card {
+    margin: 20px;
+    .card-img-top {
+        width: 178px;
+        height: 150px;
+    }
+}

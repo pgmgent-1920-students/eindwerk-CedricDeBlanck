@@ -3,7 +3,6 @@
 
 .app-footer {
   background: rgb(255,255,255);
-  background: linear-gradient(180deg, rgba(255,255,255,1) 44%, rgba(150,150,150,1) 94%);
   border: 1px solid gray;
   height: 300px;
   .footer__title {
@@ -14,7 +13,19 @@
   .info__adress {
       text-align: left;
   }
-  
+  .footer__social {
+      font-size: 30px;
+      margin: 0 auto;
+      a {
+          margin: 10px;
+      }
+      .footer__gradient {
+        background: radial-gradient(circle, rgba(150,150,150,1) 46%, rgba(255,255,255,1) 96%);
+        width: 170px;
+        height: 1px;
+        margin-left: -17px;
+      }
+  }
 }
 
 .nav.flex-column {

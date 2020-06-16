@@ -17,9 +17,12 @@ import { admin, app, db, generateTimestamps,generateValueBetweenMinAndMax } from
       console.log(`Added document with name: ${documentReference.id}`);
     });
   };
-
+  
+  
   // Create pokemons via promises
   const createPokemons = async (n = 20) => {
+
+    
     const promises = [];
     for (let i=0; i < n;i++) {
       promises.push(createPokemon({
@@ -29,6 +32,7 @@ import { admin, app, db, generateTimestamps,generateValueBetweenMinAndMax } from
         shiny: generateValueBetweenMinAndMax(0, 1) === 0 ? false : true,
         type: faker.lorem.word(),
         pictureURL: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${generateValueBetweenMinAndMax(0, 800)}.png`
+
       }));
     }
     return await Promise.all(promises);
