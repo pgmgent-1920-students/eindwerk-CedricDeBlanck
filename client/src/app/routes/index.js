@@ -1,4 +1,4 @@
-export const LANDING = '/home';
+export const LANDING = '/';
 export const HOME = '/home';
 export const VEGETABLES = '/groenten';
 export const BOOKMARK_DETAIL = '/bookmarks/:id';

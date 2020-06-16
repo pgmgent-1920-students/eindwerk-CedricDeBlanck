@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/eindwerk-CedricDeBlanck/precache-manifest.f608d1179a2e8dd35c2a56401df9f6e8.js"
+  "/eindwerk-CedricDeBlanck/precache-manifest.f3978b859d3ae5c5312d8f3560ae44ea.js"
 );
 
 self.addEventListener('message', (event) => {
