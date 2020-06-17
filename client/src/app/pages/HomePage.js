@@ -21,7 +21,7 @@ const HomePage = ({children}) => {
           <p className="card-text">
             <img src="https://ec.europa.eu/jrc/sites/jrcsh/files/styles/normal-responsive/public/samael334_adobestock_167843675.jpeg?itok=kSQjfav6" width="500px"></img>
           </p>
-          <a className="btn btn-primary white" href={Routes.VEGETABLES}><NavLink to={Routes.VEGETABLES} className="nav-link" activeClassName="active">Lijst van groenten</NavLink></a>
+          <NavLink to={Routes.VEGETABLES} className="nav-link" activeClassName="active">Lijst van groenten</NavLink>
         </div>
         <div className="card-footer text-muted">
         </div>
@@ -36,7 +36,7 @@ const HomePage = ({children}) => {
           <p className="card-text">
             <img src="https://www.retaildetail.be/sites/default/files/styles/news/public/news/shutterstock_1465341938_0.jpg" width="500px"></img>
           </p>
-          <a className="btn btn-primary white" href={Routes.FRUIT}><NavLink to={Routes.FRUIT} className="nav-link" activeClassName="active">Lijst van fruit</NavLink></a>
+          <NavLink to={Routes.FRUIT} className="nav-link" activeClassName="active">Lijst van fruit</NavLink>
         </div>
         <div className="card-footer text-muted">
         </div>
