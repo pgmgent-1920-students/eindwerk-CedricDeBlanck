@@ -21,7 +21,7 @@ const FruitDetailInner = ({fruit}) => {
               <NavLink to={Routes.FRUIT} className="detail__go-back" activeClassName="active"><FaArrowLeft /> Ga terug</NavLink>
               </div>
             <div className="detail__page__inner">
-              <div className="Detail__image" data-id={fruit.uid}>
+              <div className="detail__image" data-id={fruit.uid}>
                 <img src={fruit.data.image} className="card-img" alt={fruit.data.name}/>
               </div>
               <div className="card-body__inner">
@@ -42,7 +42,7 @@ const FruitDetailInner = ({fruit}) => {
           </div>
           
         )
-      : <p>No bookmark.</p>
+      : <p>Geen fruit gevonden</p>
       }
     </div>
   )
