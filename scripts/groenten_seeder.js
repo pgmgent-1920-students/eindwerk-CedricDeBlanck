@@ -44,10 +44,10 @@ import { admin, app, db, generateTimestamps } from './firebase';
   // Create a Message
  // document with data webshop bouncemerch
  const data = {
-  name: 'Courgette',
-  content:' tis keer twuk el',
-  price:'€1,00',
-  image: 'https://img-3.journaldesfemmes.fr/PVIbH_pGxMFhGPl8oEkWr3DbtaY=/910x607/smart/3d4af6fac7234c2283fd7d9cf34e6981/ccmcms-jdf/10659281.jpg',
+  name: 'Gele Paprika',
+  content:'Paprika is de plant Capsicum annuum en de vrucht van bepaalde gekweekte vormen daarvan. De vruchten van andere gekweekte vormen van deze plant, zoals cayennepeper, kunnen er heel anders uitzien. ',
+  price:'€0,40',
+  image: 'https://static.ah.nl/image-optimization/static/product/AHI_434d50323536353534_1_LowRes_JPG.JPG?options=399,q85',
   };
   collectionRef.add({data}).then(documentReference => {
   console.log(`Added document with name: ${documentReference.id}`);

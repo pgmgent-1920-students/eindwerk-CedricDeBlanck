@@ -23,11 +23,6 @@ const BookmarkDetailPage = ({}) => {
   return (
     <div className="page page--bookmark">
       <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <h1>Bookmark</h1>
-            </div>
-          </div>
           <VegetableDetailInner vegetable={vegetable} />
       </div>
     </div>

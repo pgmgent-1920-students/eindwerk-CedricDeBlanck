@@ -12,7 +12,7 @@ const FirestoreProvider = ({children}) => {
   const { app } = useFirebase();
   const db = app.firestore();
 
-  const GetFruit = async () => {
+  const GetFruits = async () => {
     const query = db.collection('Fruit');
     const querySnapshot = await query.get();
     const fruit = querySnapshot.docs.map((doc) => {
@@ -49,6 +49,17 @@ const FirestoreProvider = ({children}) => {
     };
   };
 
+  const getDetailFromFruits = async (id) => {
+    const docRef = await db.collection('Fruit').doc(id);
+    const docSnapshot = await docRef.get();
+    return {
+      uid: docSnapshot.id,
+      ...docSnapshot.data()
+    };
+  };
+
+  
+
   /*const getDetailFromVegetables = async (id) => {
     const docRef = db.collection('Groenten').doc();
     const docSnapshot = await docRef.get(id);
@@ -61,7 +72,7 @@ const FirestoreProvider = ({children}) => {
   };*/
 
   return (
-    <FirestoreContext.Provider value={{GetFruit, getVegetables, getDetailFromVegetables}}>
+    <FirestoreContext.Provider value={{GetFruits, getVegetables, getDetailFromVegetables, getDetailFromFruits}}>
       {children}
     </FirestoreContext.Provider>
   );

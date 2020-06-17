@@ -1,0 +1,57 @@
+@import '../../_sass/abstracts/index';
+@import '../../_sass/vendor/index';
+
+.detail__page {
+    width: 80%;
+    margin: $gutter;
+    margin: 20px auto;
+    .detail__go-back {
+        color: $color-cyan;
+        margin-bottom: 20px;
+    }
+    .detail__page__inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    .card-body__inner {
+        background-color: white;
+        box-shadow: 5px 5px 22px 0px rgba(0,0,0,0.75);
+        width: 400px;
+        height: 400px;
+        padding: 20px;
+        .card-price {
+            font-size: 40px;
+            color: $color-cyan;
+        }
+        #fname {
+            width: 60px;
+        }
+        .card-stock {
+            color: green;
+        }
+    }
+    .Detail__image {
+        width: 400px;
+        height: 400px;
+        .card-img {
+            width: 400px;
+            height: 400px;
+        }
+
+    }
+    .detail__info {
+        .detail__line {
+            width: 100%;
+            height: 1px;
+            border: 0.5px solid black;
+            margin: 20px 0px;
+        }
+        .detail__info__inner {
+            margin: 30px 0px;
+            
+        }
+    }
+   
+}

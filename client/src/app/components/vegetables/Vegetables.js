@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useFirestore } from '../../services';
+import { useFirestore } from '../../services/firebase/firestore.services';
 
 import { Link } from 'react-router-dom';
  
@@ -32,7 +32,7 @@ const VegetablesList = () => {
               <div className="card" key={vegetables.uid}>
                 <img src={vegetables.data.image} className="card-img-top" alt={vegetables.data.name} />
                 <div className="card-body">
-                  <p className="card-text">{vegetables.data.content}</p>
+                  <p className="card-text">{vegetables.data.name}</p>
                   <Link to={Routes.VEGETABLES_DETAIL.replace(':id', vegetables.uid)} className="btn btn-info btn-detail">Meer info</Link>
                 </div>
                 
