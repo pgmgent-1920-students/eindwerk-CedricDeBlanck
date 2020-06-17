@@ -1,5 +1,5 @@
-export const LANDING = '/';
-export const HOME = '/home';
+export const LANDING = '/eindwerk-CedricDeBlanck/';
+export const HOME = '/eindwerk-CedricDeBlanck/';
 export const VEGETABLES = '/vegetables';
 export const VEGETABLES_DETAIL = '/vegetables/:id';
 export const FRUIT = '/fruit';
