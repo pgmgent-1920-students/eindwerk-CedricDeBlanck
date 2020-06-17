@@ -5,7 +5,7 @@ import { AuthProvider, FirebaseProvider, FirestoreProvider } from './services';
 import { RouteWithLayout } from './utilities';
 
 import { BaseLayout } from './layouts';
-import { HomePage, VegetablePage, SignInPage, FruitPage, ContactPage, DetailpageVegetables} from './pages';
+import { HomePage, VegetablePage, SignInPage, FruitPage, ContactPage, DetailpageVegetables, DetailpageFruit} from './pages';
 
 import * as Routes from './routes';
 
@@ -23,6 +23,7 @@ function App() {
                 <Redirect from={Routes.HOME} to={Routes.LANDING}/>
                 <RouteWithLayout exact path={Routes.VEGETABLES} layout={ BaseLayout } component={ VegetablePage }/>
                 <RouteWithLayout exact path={Routes.FRUIT} layout={ BaseLayout } component={ FruitPage }/>
+                <RouteWithLayout exact path={Routes.FRUIT_DETAIL} layout={ BaseLayout } component={ DetailpageFruit }/>
                 <RouteWithLayout exact path={Routes.VEGETABLES_DETAIL} layout={ BaseLayout } component={ DetailpageVegetables }/>
                 <RouteWithLayout exact path={Routes.CONTACT} layout={ BaseLayout } component={ ContactPage }/>
                 <RouteWithLayout exact path={Routes.AUTH_SIGN_IN} layout={ BaseLayout } component={ SignInPage }/>

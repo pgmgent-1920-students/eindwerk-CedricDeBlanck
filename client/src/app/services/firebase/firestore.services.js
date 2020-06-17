@@ -12,7 +12,7 @@ const FirestoreProvider = ({children}) => {
   const { app } = useFirebase();
   const db = app.firestore();
 
-  const GetFruits = async () => {
+  const getFruits = async () => {
     const query = db.collection('Fruit');
     const querySnapshot = await query.get();
     const fruit = querySnapshot.docs.map((doc) => {
@@ -72,7 +72,7 @@ const FirestoreProvider = ({children}) => {
   };*/
 
   return (
-    <FirestoreContext.Provider value={{GetFruits, getVegetables, getDetailFromVegetables, getDetailFromFruits}}>
+    <FirestoreContext.Provider value={{getFruits, getVegetables, getDetailFromVegetables, getDetailFromFruits}}>
       {children}
     </FirestoreContext.Provider>
   );

@@ -3,12 +3,11 @@ import { NavLink, Link  } from 'react-router-dom';
 
 import * as Routes from '../../routes';
 
-import './VegetableDetail.scss';
 import { FaCheckCircle } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa";
 
 
-const FruitDetailInner = ({vegetable}) => {
+const FruitDetailInner = ({fruit}) => {
 
 
 
@@ -37,7 +36,7 @@ const FruitDetailInner = ({vegetable}) => {
               </div>
               <div className="detail__info">
                 <div className="detail__line"></div>
-                <p className="detail__info__inner">{vegetable.data.content}</p>
+                <p className="detail__info__inner">{fruit.data.content}</p>
                 <div className="detail__line"></div>
               </div>
           </div>

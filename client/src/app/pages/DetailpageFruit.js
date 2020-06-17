@@ -7,18 +7,18 @@ import { useFirestore } from '../services';
 const BookmarkDetailPage = ({}) => {
   const { id } = useParams();
   const [fruit, setFruit] = useState(null);
-  const {getDetailFromFruit} = useFirestore();
+  const {getDetailFromFruits} = useFirestore();
 
   useEffect(() => {
     const fetchData = async (q) => {
-      const data = await getDetailFromFruit(id);
+      const data = await getDetailFromFruits(id);
       setFruit(data);
     }; 
 
     if (!fruit) {
       fetchData();
     }
-  }, []);
+  }, [getDetailFromFruits]);
 
   return (
     <div className="page page--bookmark">
