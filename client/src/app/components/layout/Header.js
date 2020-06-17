@@ -52,7 +52,7 @@ const Header = (props) => {
       <div className="mobile_nav">
           <nav className="navbar navbar-light amber lighten-4 mb-4">
 
-            <a className="navbar-brand" href="#">Groenten & Fruit</a>
+            <a className="navbar-brand" href={Routes.LANDING}>Groenten & Fruit</a>
 
             <button className="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20"
               aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
