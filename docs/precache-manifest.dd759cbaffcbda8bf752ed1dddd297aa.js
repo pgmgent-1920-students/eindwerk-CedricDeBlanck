@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9286fc556124d67331b7d9eb48e25833",
+    "revision": "57016ddba4a27426e047ae25e0197391",
     "url": "/eindwerk-CedricDeBlanck/index.html"
   },
   {
-    "revision": "c9c706149d2e74c71892",
-    "url": "/eindwerk-CedricDeBlanck/static/css/main.bc54f320.chunk.css"
+    "revision": "5b1888bcd392aa6983bd",
+    "url": "/eindwerk-CedricDeBlanck/static/css/main.69610bae.chunk.css"
   },
   {
     "revision": "8510c6018d9f626ff1cd",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/eindwerk-CedricDeBlanck/static/js/2.ebfed70f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c9c706149d2e74c71892",
-    "url": "/eindwerk-CedricDeBlanck/static/js/main.9562ebf3.chunk.js"
+    "revision": "5b1888bcd392aa6983bd",
+    "url": "/eindwerk-CedricDeBlanck/static/js/main.5cd236b4.chunk.js"
   },
   {
     "revision": "d3b2979ac3c66b1e11c0",
