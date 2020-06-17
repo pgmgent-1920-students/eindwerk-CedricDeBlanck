@@ -26,13 +26,14 @@ const VegetablesList = () => {
     {!!vegetables 
       ? vegetables.map((vegetables) => {
         return (
-          <div className="row" key={vegetables.uid}>
+          <div className="row vegetable__article" key={vegetables.uid}>
             <div className="col-12" key={vegetables.uid}>
               <article className="vegetable" key={vegetables.uid} data-id={vegetables.uid}>
               <div className="card" key={vegetables.uid}>
                 <img src={vegetables.data.image} className="card-img-top" alt={vegetables.data.name} />
                 <div className="card-body">
                   <p className="card-text">{vegetables.data.name}</p>
+                  <p className="card-text">{vegetables.data.price}</p>
                   <Link to={Routes.VEGETABLES_DETAIL.replace(':id', vegetables.uid)} className="btn btn-info btn-detail">Meer info</Link>
                 </div>
                 

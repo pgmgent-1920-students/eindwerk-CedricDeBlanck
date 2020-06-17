@@ -37,6 +37,24 @@
   }
 }
 
+
 .nav.flex-column {
     justify-content: flex-end;
 }
+
+@media only screen and(max-width: 500px) {
+    .app-footer {
+        height: 600px;
+        .info__adress {
+            margin: 20px;
+         }
+        .footer__nav {
+            display: none;
+        }
+        .footer__social {
+            margin-top: $gutter*3;
+        }
+    }
+ 
+}
+

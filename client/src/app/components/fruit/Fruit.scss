@@ -1,6 +1,8 @@
-@import '../../_sass/abstracts/index';
-@import '../../_sass/vendor/index';
-
+.fruit {
+    display: flex;
+    flex-direction: column;
+    
+}
 
 .card {
     margin: 20px;
@@ -14,15 +16,15 @@
 
 @media only screen and(max-width:500px) {
 
-    .row.vegetables-list {
+    .row.fruit-list {
         margin: 0 auto;
     }
     
-    .vegetable__article {
+    .fruit {
         margin: 0 auto;
     }
 
-    .vegetable {
+    .fruit {
         width: 350px;
         text-align: center;
         .card-img-top {

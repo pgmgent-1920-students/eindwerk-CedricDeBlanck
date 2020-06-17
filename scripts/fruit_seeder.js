@@ -44,10 +44,10 @@ import { admin, app, db, generateTimestamps } from './firebase';
   // Create a Message
  // document with data webshop bouncemerch
  const data = {
-  name: 'Peer',
-  content:'Peer, Pyrus, is een plantengeslacht uit de rozenfamilie (Rosaceae) dat de algemeen bekende vruchten produceert. Het geslacht komt voor in veel landen, vooral op het noordelijk halfrond. ',
-  price:'€0,35',
-  image: 'https://static.hbvl.be/Assets/Images_Upload/2019/03/23/513f3982-4cc2-11e9-8557-067a2276eea2.jpg?width=1152&format=jpg',
+  name: 'Kiwi',
+  content:'De kiwi of Chinese kruisbes (Actinidia chinensis) is de eetbare vrucht van een snel groeiende slingerende klimplant. De vruchten van de gewone kiwi zijn gewoonlijk langwerpig ovaal van vorm, hebben helder vruchtvlees met een witte kern en een ring van zwarte pitjes rondom deze kern. Schijfjes kiwi worden vaak als decoratieve garnering van gebak, salades en dergelijke gebruikt, maar de vrucht kan ook in zijn geheel worden gegeten (met of zonder schil). ',
+  price:'€0,60',
+  image: 'https://gcm.rmnet.be/imgcontrol/c750-d511/clients/rmnet/content/medias/leisure/food/kiwi.jpg',
   };
   collectionRef.add({data}).then(documentReference => {
   console.log(`Added document with name: ${documentReference.id}`);

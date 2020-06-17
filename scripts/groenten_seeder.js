@@ -44,10 +44,10 @@ import { admin, app, db, generateTimestamps } from './firebase';
   // Create a Message
  // document with data webshop bouncemerch
  const data = {
-  name: 'Gele Paprika',
-  content:'Paprika is de plant Capsicum annuum en de vrucht van bepaalde gekweekte vormen daarvan. De vruchten van andere gekweekte vormen van deze plant, zoals cayennepeper, kunnen er heel anders uitzien. ',
-  price:'€0,40',
-  image: 'https://static.ah.nl/image-optimization/static/product/AHI_434d50323536353534_1_LowRes_JPG.JPG?options=399,q85',
+  name: 'Aardappelen',
+  content:'De aardappel (Solanum tuberosum) behoort tot de nachtschadefamilie, net als de tomaat, paprika en tabak. De aardappel is een plant die ondergronds een energievoorraad in de vorm van zetmeel aanlegt. Het zetmeel slaat de plant op in voor de mens eetbare stengelknollen, die net als de plant zelf aardappelen of aardappels worden genoemd. De aardappel is wereldwijd het belangrijkste voedselgewas na rijst, tarwe en mais. ',
+  price:'€0,90/kilo',
+  image: 'https://dejuistekooktijd.nl/wp-content/uploads/2019/05/aardappelen.jpg',
   };
   collectionRef.add({data}).then(documentReference => {
   console.log(`Added document with name: ${documentReference.id}`);

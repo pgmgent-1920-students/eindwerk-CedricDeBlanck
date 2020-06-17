@@ -21,6 +21,7 @@ const CourtesyNavigation = ({children}) => {
             </button>
             <div className="dropdown-menu dropdown-menu-right">
               <a className="dropdown-item" href={Routes.HOME} onClick={signOut}>Logout</a>
+              <a className="dropdown-item" href={Routes.SHOPPINGBASKET} >Winkelwagen</a>
             </div>
           </div>
         : <Link className="nav-link" to={Routes.AUTH_SIGN_IN}>Log in</Link>

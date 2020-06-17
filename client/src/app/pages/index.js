@@ -5,6 +5,7 @@ import HomePage from './HomePage';
 import VegetablePage from './VegetablePage';
 import ContactPage from './ContactPage';
 import SignInPage from './SignInPage';
+import ShoppingBasketPage from './ShoppingBasketPage';
 
 export {
   FruitPage,
@@ -14,4 +15,5 @@ export {
   VegetablePage,
   ContactPage,
   SignInPage,
+  ShoppingBasketPage
 }

@@ -13,11 +13,10 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-
     }
     .card-body__inner {
         background-color: white;
-        box-shadow: 5px 5px 22px 0px rgba(0,0,0,0.75);
+        box-shadow: 5px 5px 22px 0px rgba(0,0,0,0.45);
         width: 400px;
         height: 400px;
         padding: 20px;
@@ -54,4 +53,25 @@
         }
     }
    
+}
+
+@media only screen and(max-width: 500px) {
+    .detail__page {
+        .detail__page__inner {
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            margin-left: -10px;
+            .Detail__image {
+                img {
+                    width: 350px;
+                }
+            }
+            .card-body__inner {
+                width: 350px;
+                margin-top: $gutter;
+            }
+        }
+    }
+
 }

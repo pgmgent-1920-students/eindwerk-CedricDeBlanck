@@ -1,0 +1,9 @@
+@import '../_sass/abstracts/index';
+@import '../_sass/vendor/index';
+
+.contact--page {
+  margin: 0 auto;
+  .btn-primary {
+      color: white;
+  }
+}

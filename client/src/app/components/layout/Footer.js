@@ -38,7 +38,7 @@ const Footer = (props) => {
                   <p className="info__adress__inner">TEL: {props.tel.TEL}</p>
             </div>
           </div>
-          <div className="col-12 col-md-4 col-lg-4">
+          <div className="col-12 col-md-4 col-lg-4 footer__nav">
           <ul className="nav flex-column">
               <li className="nav-item">
                 <Link to={Routes.HOME} className="nav-link">Home</Link>
@@ -62,11 +62,6 @@ const Footer = (props) => {
           </div>
         </div>
       </div>
-
-
-     <div className="footer__information">
-
-     </div>
     </footer>
   );
 };
