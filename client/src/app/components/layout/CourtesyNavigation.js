@@ -20,7 +20,7 @@ const CourtesyNavigation = ({children}) => {
               <img className="profile__picture" src={Logo} />
             </button>
             <div className="dropdown-menu dropdown-menu-right">
-              <a className="dropdown-item" href={Routes.HOME} onClick={signOut}>Logout</a>
+              <a className="dropdown-item" href={Routes.LANDING} onClick={signOut}>Logout</a>
               <a className="dropdown-item" href={Routes.SHOPPINGBASKET} >Winkelwagen</a>
             </div>
           </div>
