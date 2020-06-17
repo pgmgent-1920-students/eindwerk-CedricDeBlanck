@@ -5,7 +5,13 @@
     .card {
         margin: 50px 0px
     }
+    .btn.btn-primary.white {
+        a {
+            color: white!important;
+        }
+    }
 }
+
 
 @media only screen and(max-width: 500px) {
     .card-text {

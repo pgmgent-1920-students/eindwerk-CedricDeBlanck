@@ -63,7 +63,7 @@ const Header = (props) => {
 
               <ul className="navbar-nav mr-auto">
                 <li className="nav-item active">
-                <NavLink to={Routes.LANDING} className="nav-link" activeClassName="active">Home</NavLink>
+                <NavLink to={Routes.LANDING} className="nav-link" activeClassName="active"></NavLink>
                 </li>
                 <li className="nav-item">
                 <NavLink to={Routes.VEGETABLES} className="nav-link" activeClassName="active">Groenten</NavLink>
@@ -75,10 +75,7 @@ const Header = (props) => {
                 <NavLink to={Routes.CONTACT} className="nav-link" activeClassName="active">Contact</NavLink>
                 </li>
                 <li>
-                <div className="login">
                   <NavLink to={Routes.SHOPPINGBASKET} className="nav-link" activeClassName="active">Winkelmandje</NavLink>
-                  <CourtesyNavigation />
-                </div>
                 </li>
               </ul>
 

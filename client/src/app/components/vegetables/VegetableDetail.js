@@ -22,7 +22,7 @@ const VegetableDetailInner = ({vegetable}) => {
               <NavLink to={Routes.VEGETABLES} className="detail__go-back" activeClassName="active"><FaArrowLeft /> Ga terug</NavLink>
               </div>
             <div className="detail__page__inner">
-              <div className="Detail__image" data-id={vegetable.uid}>
+              <div className="detail__image" data-id={vegetable.uid}>
                 <img src={vegetable.data.image} className="card-img" alt={vegetable.data.name}/>
               </div>
               <div className="card-body__inner">

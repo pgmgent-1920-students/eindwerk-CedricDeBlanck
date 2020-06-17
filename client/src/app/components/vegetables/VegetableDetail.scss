@@ -31,8 +31,7 @@
             color: green;
         }
     }
-    .Detail__image {
-        width: 400px;
+    .detail__image {
         height: 400px;
         .card-img {
             width: 400px;
@@ -62,7 +61,7 @@
             justify-content: space-between;
             width: 100%;
             margin-left: -10px;
-            .Detail__image {
+            .detail__image {
                 img {
                     width: 350px;
                 }
