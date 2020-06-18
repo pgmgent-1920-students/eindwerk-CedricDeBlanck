@@ -20,29 +20,7 @@ import { admin, app, db, generateTimestamps } from './firebase';
     });
   });
   console.log(Groenten);
-
-  // 1. Add a document
-  /*collectionRef.add({foo: 'bar'}).then(documentReference => {
-    console.log(`Added document with name: ${documentReference.id}`);
-  });*/
-
-  // 2. Add a document
-  /*let documentRef = collectionRef.doc();
-  documentRef.create({foo: 'bar'}).then((res) => {
-    console.log(`Document created at ${res.writeTime.toDate()}`);
-  }).catch((err) => {
-    console.log(`Failed to create document: ${err}`);
-  });*/
-
-  // 3. Add a document
-  /*collectionRef.doc(uuidv4()).create({bar: 'foo'}).then((res) => {
-    console.log(`Document created at ${res.writeTime.toDate()}`);
-  }).catch((err) => {
-    console.log(`Failed to create document: ${err}`);
-  });*/
-
-  // Create a Message
- // document with data webshop bouncemerch
+// Data to seed to firebase
  const data = {
   name: 'Aardappelen',
   content:'De aardappel (Solanum tuberosum) behoort tot de nachtschadefamilie, net als de tomaat, paprika en tabak. De aardappel is een plant die ondergronds een energievoorraad in de vorm van zetmeel aanlegt. Het zetmeel slaat de plant op in voor de mens eetbare stengelknollen, die net als de plant zelf aardappelen of aardappels worden genoemd. De aardappel is wereldwijd het belangrijkste voedselgewas na rijst, tarwe en mais. ',
@@ -52,16 +30,5 @@ import { admin, app, db, generateTimestamps } from './firebase';
   collectionRef.add({data}).then(documentReference => {
   console.log(`Added document with name: ${documentReference.id}`);
   });
-
-  // // Create messages via promises
-  // const createMessages = async (n = 20) => {
-  //   const promises = [];
-  //   for (let i=0; i < n;i++) {
-  //     promises.push(createMessage(faker.lorem.paragraph(), faker.name.findName()));
-  //   }
-  //   return await Promise.all(promises);
-  // };
-
-  //await createMessages(24); 
 
 })();
